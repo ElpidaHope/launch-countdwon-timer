@@ -18,7 +18,7 @@ function App() {
   let interval = useRef();
 
   const startTimer = () => {
-    const launchDate = new Date('March 29, 2022 00:00:00').getTime();
+    const launchDate = new Date('August 8, 2022 00:00:00').getTime();
     
     interval = setInterval(() => {
       const difference =  launchDate- new Date().getTime();
@@ -48,7 +48,7 @@ function App() {
   }, [])
 
   const handleFlip = useEffect(() => {
-    return 'change'
+    return true
   }, [day, hour, minutes, seconds])
 
   return (
